@@ -4,3 +4,30 @@ public void start(Stage primaryStage) throws Exception {
    primaryStage.setScene(new Scene(root, 600, 400));
    primaryStage.show();
 }
+
+.root-pane {
+   -fx-background-color: rosybrown;
+}
+
+.label {
+   -fx-font-size: 16px;
+   -fx-font-weight: bolder;
+   -fx-text-fill: green;
+}
+
+#title-text {
+   -fx-font-size: 40px;
+   -fx-font-family: "Arial Rounded MT Bold";
+   -fx-fill: yellow;
+}
+
+#actionTarget {
+   -fx-fill: red;
+   -fx-font-weight: bold;
+}
+
+.button {
+   -fx-text-fill: white;
+   -fx-font-family: "Arial Narrow";
+   -fx-font-weight: bold;
+ }
