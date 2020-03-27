@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="loose.oose.fis.lab.student.manager.controllers.ViewStudentsController">
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea"
+            fx:controller="loose.oose.fis.lab.student.manager.controllers.ViewStudentsController"
+            styleClass="root">
     <children>
         <BorderPane prefHeight="400.0" prefWidth="600.0">
             <center>
@@ -18,7 +18,8 @@
                         <TableColumn fx:id="studentLastNameColumn" prefWidth="190.0" text="Last Name"/>
                         <TableColumn fx:id="studentFirstNameColumn" prefWidth="190.0" text="First Name"/>
                         <TableColumn fx:id="studentAgeColumn" prefWidth="90.0" text="Age"/>
-                        <TableColumn fx:id="studentMeanGradeColumn" prefWidth="90.0" sortType="DESCENDING" text="Mean Grade"/>
+                        <TableColumn fx:id="studentMeanGradeColumn" prefWidth="90.0" sortType="DESCENDING"
+                                     text="Mean Grade"/>
                     </columns>
                 </TableView>
             </center>
@@ -27,4 +28,7 @@
             </padding>
         </BorderPane>
     </children>
+    <stylesheets>
+        <URL value="@../css/styles.css"/>
+    </stylesheets>
 </AnchorPane>
