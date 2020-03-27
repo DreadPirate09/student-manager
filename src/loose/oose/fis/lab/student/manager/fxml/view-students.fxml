@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="loose.oose.fis.lab.student.manager.controllers.ViewStudentsController">
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0">
+            <center>
+                <TableView fx:id="studentTable" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="studentLastNameColumn" prefWidth="190.0" text="Last Name"/>
+                        <TableColumn fx:id="studentFirstNameColumn" prefWidth="190.0" text="First Name"/>
+                        <TableColumn fx:id="studentAgeColumn" prefWidth="90.0" text="Age"/>
+                        <TableColumn fx:id="studentMeanGradeColumn" prefWidth="90.0" sortType="DESCENDING" text="Mean Grade"/>
+                    </columns>
+                </TableView>
+            </center>
+            <padding>
+                <Insets bottom="50.0" left="20.0" right="20.0" top="50.0"/>
+            </padding>
+        </BorderPane>
+    </children>
+</AnchorPane>
